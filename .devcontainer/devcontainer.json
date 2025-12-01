@@ -1,6 +1,6 @@
 {
-  "name": "Hybrid Movie Recommender - Python 3.11",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "name": "Hybrid Movie Recommender - Python 3.8",
+  "image": "mcr.microsoft.com/devcontainers/python:3.8",
   "features": {},
   "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
   "customizations": {
