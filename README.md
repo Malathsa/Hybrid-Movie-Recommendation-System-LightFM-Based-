@@ -34,7 +34,6 @@ This notebook contains the full project code in one file, including:
 
 It is provided to simplify running, understanding, and reusing the project without navigating multiple source files.
 
----
 
 ---
 
@@ -53,6 +52,7 @@ Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ---
 
@@ -73,7 +73,7 @@ These files must be placed inside the data/ directory as shown in the project st
 Open and run the notebook:
 ```bash
 Full_implementation.ipynb
-
+```
 
 
 Run all cells sequentially to:
@@ -87,13 +87,13 @@ Run all cells sequentially to:
 Launch the interactive web interface using:
 ```bash
 Streamlit run app.py
-
+```
 ### Option 3: Run from the Command Line
 
 If supported by the project configuration:
 ```bash
 python main.py
-
+```
 ---
 
 ## How to Use the System
