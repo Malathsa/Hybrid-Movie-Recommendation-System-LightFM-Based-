@@ -112,15 +112,16 @@ The system uses a pretrained Hybrid LightFM model and does not retrain during ru
 
 ## Model Checkpoint
 
-After training, the Hybrid LightFM model is saved as a final checkpoint:
+During training, the Hybrid LightFM model uses epoch-based checkpointing.  
+After each training epoch, the current model state is saved to a single checkpoint file:
+```bash
+lightfm_hybrid_checkpoint.pkl
+```
+### Notes
 
-This checkpoint stores the final learned parameters and allows the model to be loaded instantly for inference without retraining.
-
-Notes
- - The system uses a final checkpoint only
- - No continuous retraining or online learning is implemented
- - No explicit user feedback is collected during runtime
- - The architecture supports future extensions such as feedback integration and retraining
+- Checkpointing is performed after every epoch using an epoch-based criterion 
+- A single checkpoint file is maintained and continuously updated
+- The architecture supports future extensions such as feedback integration and retraining
 
 ---
 
